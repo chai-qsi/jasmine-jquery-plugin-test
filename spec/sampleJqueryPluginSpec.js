@@ -1,8 +1,7 @@
 describe("Jquery plugin tests", function() {
 	beforeEach(function () {
 		//jasmine.getFixtures().fixturesPath = 'javascripts/fixtures';
-		//Default path to fixtures will be spec/javascripts/fixtures/
-		loadFixtures('fixture1.html');
+		//loadFixtures('fixture1.html');
 		
 		this.addMatchers({
 			toBeColored: function() {
@@ -28,7 +27,7 @@ describe("Jquery plugin tests", function() {
 	});
 	
 	describe("sample jquery plugin", function() {
-		it("should apply classes even or odd to alternate table rows", function() {
+		it("should apply classes even and odd to each table rows", function() {
 			var table = $("#table");
 			table.colorAltRows();
 			expect(table).toBeColored();
